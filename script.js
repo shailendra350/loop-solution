@@ -6,12 +6,18 @@ var c=a
 // b=c
 // console.log("1st-",a,b)
 
+
+
+
 //without using third variable
 
   a = a+b
   b = a-b
   a =a-b
   console.log( "2nd-", a,b)
+
+
+
 
 
 //first solution
@@ -30,6 +36,9 @@ if(a>b){
 }
 console.log( "3rd-", big)
     
+
+
+
 
 //max b/w 3 number
 
@@ -57,6 +66,13 @@ var c=70
  }
  console.log( "4th-", big)
 
+
+
+
+
+
+
+
  //positive negative zero
 
 a=0
@@ -72,6 +88,11 @@ a=0
   }
 
 
+
+
+
+
+
 //divisible or not
 
 var d =55
@@ -85,6 +106,12 @@ if(d%5==0){
  	console.log( "6th-", "this is not divisible ")
  }
  
+
+
+
+
+
+
 //even or odd
 
 var b =4
@@ -93,6 +120,13 @@ if(b%2==0){
 }else{
 	console.log( "7th-", "odd")
 }
+
+
+
+
+
+
+
 
 //leap year or not 
 
@@ -114,39 +148,158 @@ var L = 2000
  	   }
  	  
 
+
+
+
+
+
  	//   vowel or consonent
 
-  // var v= a,e,i,o,u
-  //  n=e
- 	// if(v=n){
- 	// 	console.log( "9th-", "this is vowel")
- 	// }else{
- 	// 	console.log( "9th-", "this is consonent")
- 	// }
+  ch ="h"
+  if(ch=='a' || ch =='e' || ch =='i' || ch =='o' ||ch =='u'){
+    console.log("9th-","it is vowel")
+  }else{
+    console.log("9th-","it is consonent")
+  }
+
+
+
+
+
+
+
+
+
 
   //    //dayname by 1 2 3
 
- 	// var day="1" 
- 	// var day="2"
- 	// var day= 3
- 	// var day= 4
- 	// var day= 5
- 	// var day=6
- 	// var day= 7
-      
-  // day="1"
+ 	var daynumber =5
 
-  //   if(day="1"){
-  //   	console.log(monday)
-  //   }else{
-  //   		console.log(tuesday)
-  //   	}
+  var days=['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
     
+    if(daynumber>0 && daynumber<=7){
+      console.log( "10th-", days[daynumber-1])
+    }else{
+      console.log( "10th-", "invallid")
+    }
+   
 
-  //     var arr =['monday','tuesday','wednesday','thursday','friday','saturday','sunday']
-  //      console.log(arr[6])
+
 
    
+   //month days 
+
+   var monthnumber=1
+
+   var days =['31','28','31','30','31','30','31','31','30','31','30','31']
+
+   if(monthnumber>0 && monthnumber<=12){
+    console.log("11th-",days[monthnumber-1])
+   }else{
+    console.log("11th-","invaild month number")
+   }
+
+
+
+
+
+
+
+   // number of notes
+
+   var amount =5432
+
+   var notes ={
+      2000:0,
+      500:0,
+      200:0,
+      100:0,
+      50:0,
+      20:0,
+      10:0,
+      5:0,
+      2:0,
+      1:0,
+   }
+    
+
+
+
+
+
+//number of notes
+
+    //check for 2000
+
+    if(amount>=2000)   {  
+    notes[2000] = (amount-amount%2000)/2000
+    amount=amount-notes[2000]*2000    
+ }
+  
+   //check for 500
+
+    if(amount>=500)   {  
+    notes[500] = (amount-amount%500)/500
+    amount=amount-notes[500]*500    
+ } 
+
+ //check for 200
+
+    if(amount>=200)   {  
+    notes[200] = (amount-amount%200)/200
+    amount=amount-notes[200]*200    
+ }
+
+ //check for 100
+
+    if(amount>=100)   {  
+    notes[100] = (amount-amount%100)/100
+    amount=amount-notes[100]*100    
+ }
+
+ //check for 50
+
+    if(amount>=50)   {  
+    notes[50] = (amount-amount%50)/50
+    amount=amount-notes[50]*50    
+ }
+
+ //check for 20
+
+    if(amount>=20)   {  
+    notes[20] = (amount-amount%20)/20
+    amount=amount-notes[20]*20    
+ }
+
+ //check for 10
+
+    if(amount>=10)   {  
+    notes[10] = (amount-amount%10)/10
+    amount=amount-notes[10]*10    
+ }
+
+  //check for 5
+
+    if(amount>=5)   {  
+    notes[5] = (amount-amount%5)/5
+    amount=amount-notes[5]*5    
+ }
+
+  //check for 2
+
+    if(amount>=2)   {  
+    notes[2] = (amount-amount%2)/2
+    amount=amount-notes[2]*2    
+ }
+
+  //check for 1
+
+    if(amount>=1)   {  
+    notes[1] = (amount-amount%1)/1
+    amount=amount-notes[1]*1    
+ }
+
+  console.log("12th-", notes)
 
 
 
@@ -162,12 +315,17 @@ var L = 2000
 
 
     if(t==180){
-    	console.log( "12th-", "valid")
+    	console.log( "13th-", "valid")
     }else{
-    	console.log( "12th-", "not valid")
+    	console.log( "13th-", "not valid")
     }
 
  
+
+
+
+
+
  // valid or invalid
     var a=12
     var b=11
@@ -176,57 +334,66 @@ var L = 2000
       if(a+b>c){
               if(b+c>a){
               	if(c+a>b){
-              		console.log( "13th-", " triangle is valid")
+              		console.log( "14th-", " triangle is valid")
               	}else{
-              		console.log( "13th-", "triangle is invalid")
+              		console.log( "14th-", "triangle is invalid")
               	}
 
               }else{
-              	console.log( "13th-", "triangle is invalid ")
+              	console.log( "14th-", "triangle is invalid ")
               }
 
       }else{
-      	console.log(  "13th-", "triangle is invalid")
+      	console.log(  "14th-", "triangle is invalid")
       }
+
+
+
 
       //triangle equi iso scalen
 
-      var a =67 
-      var b =56
-      var c =67
+      var a =9 
+      var b =8
+      var c =7
       
+      if(a && b && c>0){
+
       if(a==b && b==c && c==a){
-      	     console.log("14th-","triangle is equilateral")
+      	     console.log("15th-","triangle is equilateral")
       }else{
       	if(a==b || b==c ||c==a){
-      		console.log("14th-","triangle is iscosceles")
+      		console.log("15th-","triangle is iscosceles")
       	}else{
       		if(a!=b || b!=c || c!=a){
-      		console.log("14-","triangle is scalene")
+      		console.log("15-","triangle is scalene")
       		}
       	}
 }
+}else{
+  console.log( "15th-", "invalid")
+}
+
+
+
+
+
 
 
 //quaditic equation
 
-// a=4
-// b=8
-// c=3
+a=1
+b=5
+c=4
 
-// d=b*b-4*a*c
-// d=Math.sqrt(d)
- 
-// d=(-b)+(+d)
+var d=b*b-4*a*c
 
-// e=(-b)+(-d)
-
-// d=d/(2*a)
-
-// e=e/(2*a) 
-  
-//   console.log(d,e)
-
+if(d>=0){
+  var alpha = (-b -Math.sqrt(d))/2*a
+  var beta = (-b +Math.sqrt(d))/2*a
+  console.log("16th-",alpha,beta)
+}else{
+  console.log("16th-","imaginary roots")
+}
  
 
 
@@ -243,10 +410,15 @@ var sell=5000
 var profit =sell-purchase
 var loss=purchase-sell
 if(profit>50){
-  console.log( "16th-", " profit of-", profit)
+  console.log( "17th-", " profit of-", profit)
 }else{
-  console.log("16th-", "loss of-", loss)
+  console.log("17th-", "loss of-", loss)
 }
+
+
+
+
+
 
 //percentage
 
@@ -259,25 +431,25 @@ var com=85
 var total =phy+che+bio+maths+com
 var percent=total/5
 
-console.log("percentage-", percent)
+// console.log("percentage-", percent)
  
  if(percent>=90){
-  console.log( "17th-", "Grade A")
+  console.log( "18th-", "Grade A")
  }else{
   if(percent>=80){
-    console.log(  "17th-", "Grade B")
+    console.log(  "18th-", "Grade B")
   }else{
     if(percent>=70){
-      console.log(  "17th-", "Grade C")
+      console.log(  "18th-", "Grade C")
     }else{
       if(percent>=60){
-        console.log(  "17th-", "Grade D")
+        console.log(  "18th-", "Grade D")
       }else{
         if(percent>=50){
-          console.log(  "17th-", "Grade E")
+          console.log(  "18th-", "Grade E")
         }else{
           if(percent>=40){
-            console.log(  "17th-", "Grade F")
+            console.log(  "18th-", "Grade F")
           }
         }
       }
@@ -285,22 +457,152 @@ console.log("percentage-", percent)
   }
  }
 
+
+
+
+
+
     //basic salery of employ
 
-    var a=10000
-    var b=20000
-
-      var c=(a*20/100)
-      console.log(c)
-      var d=(a*80/100)
-      console.log(d)
+   var basicsalary = 35000
 
 
 
 
+   if(basicsalary<=10000){
+        hraamouth=(basicsalary*20)/100
+        daamount=(basicsalary*80)/100
+   }else if(basicsalary<=20000){
+         hraamouth=(basicsalary*25)/100
+         daamount=(basicsalary*90)/100
+   }else {
+       hraamouth=(basicsalary*35)/100
+       daamount=(basicsalary*90)/100
+   }
+ 
+  var grosssalary = basicsalary+hraamouth+daamount
+  console.log("19th-",grosssalary)
+   
 
 
 
+
+      // electricity bill
+
+      var units =140
+      bill1=25
+     bill2=75
+     bill3=120
+     
+          
+          if(units>=50){
+            if(units>=150){
+              if(units>=250) {
+                      bill4=((units-250)*1.50)+bill1+bill2+bill3
+                  bill4= (bill4+(bill4*20)/100)
+                  console.log(bill4)
+
+              }else{
+                 bill3=((units-150)*1.20)+bill1+bill2
+                 bill3 =bill3+(bill3*20)/100  //250
+                console.log(bill3)
+              }
+
+            }else{
+              bill2=((units-50)*0.75)+bill1
+              bill2 =bill2+(bill2*20)/100
+              console.log(bill2)
+            }
+
+           
+          }else{
+             bill=(unit*0.50)
+            console.log(bill)
+            bill=(bill+(bill*20)/100)
+          }
+
+
+
+
+
+
+
+
+       //tax calculation
+
+
+       var income =5000000000
+
+       if(income<=250000){
+        tax = (income*0)/100
+         console.log("21th-",tax)  
+       }else if(income<=500000){
+            tax = (income*5)/100
+         console.log("21th-",tax)  
+       }else if(income<=750000){
+            tax = (income*10)/100
+         console.log("21th-",tax)  
+       }else if(income<=1000000){
+            tax = (income*15)/100
+         console.log("21th-",tax)  
+       }else if(income<=1250000){
+            tax = (income*25)/100
+         console.log("21th-",tax)  
+       }else if(income<=1500000){
+            tax = (income*25)/100
+         console.log("21th-",tax)  
+       }else if(income>1500000){
+            tax = (income*30)/100
+         console.log("21th-",tax)  
+       }
+
+
+
+        
+
+
+
+
+
+        //calculation of days months weeks
+     var sec = 254794321
+      var number={ year:0}
+
+if(sec>=31536000){
+   number[31536000] = (sec-sec%31536000)/31536000
+    sec = sec-number[31536000]*31536000
+    console.log(number)
+
+}
+ 
+//  if(sec>=2592000){
+//   number[2592000] = (sec-sec%2592000)/2592000
+//   sec=sec-number[2592000]*2592000
+// }
+
+
+//      if(sec>=86400){
+//   number[86400] = (sec-sec%86400)/86400
+//   sec=sec-number[86400]*86400
+// }
+
+// if(sec>=3600){
+//   number[3600] = (sec-sec%3600)/3600
+//   sec=sec-number[3600]*3600
+// }
+
+
+// if(sec>=60){
+//   number[60] = (sec-sec%60)/60
+//   sec=sec-number[60]*60
+// }
+
+
+
+// if(sec<=59){
+//   number[59] = sec
+// }
+// console.log( number)
 
 
 
