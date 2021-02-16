@@ -323,7 +323,7 @@
 // var num=28
 // sum=0
 // result=0
-// for(var i=1 ; i<=num-1; i++){
+// for(var i=1 ; i<=num/2; i++){
 // 	if(num%i==0){
 		 
 //  console.log(i)
@@ -340,92 +340,71 @@
 
 
 
-//28
-//
+//32
+// PRIME OR NOT
 
-var num=50
-sum=0
-result=0
+// function isPrime(number){
+//     var prime = "number is prime"
+//     for(var i = 2; i<=number/2; i++){
+//         if(number%i==0){
+//             prime = "number is not prime"
+//             break
+//         }
+//     }
+//     return prime
+// }
+    
+//    var number =15
+//    console.log(isPrime(number))
 
-if(num<=50){
-      
-   for(var i=1 ; i<=num-1 ; i++){
-           for(var j=1 ; j<=num-1 ; j++){
-           	  if(num%i==0)
-           	           {
-           	           	console.log(i)
-           	           	sum +=i
-           	  	  if(sum==num){
-           	  	  	console.log(sum)
-           	  	  }
-           	  	  
-           	  }
-           	  
-           }
-           j++
-           
-   }
-   i++
-   
 
-// 	for(var i=1 ; i<=num-1 ; i++){
-// 			if(num%i==0){
-		 
-//         console.log(i)
-//           sum +=i
-//            }
-         
-// 	}
-// 	console.log("the sum is ",sum)
 
-//    if(sum==num){
-// 	console.log("this number is perfect number")
-// }else{
-// 	console.log("this number is not perfect number")
+//34
+
+// function isPrime(number){
+//     var prime = true
+//     for(var i = 2; i<=number/2; i++){
+//         if(number%i==0){
+//             prime = false
+//             break
+//         }
+//     }
+//     return prime
 // }
 
 
+
+// var primeCount = 0
+// var i =0;
+// for(var i=1; i<=50 ;i++){
+//     if(isPrime(i)){
+//         console.log(i)
+//         primeCount++
+//     }
+//     i++
+// } 
+
+
+//37
+
+
+
+// for(var i=5 ; i>=1 ; i--){
+//   console.log(i)
+// }
+
+
+
+
+//39
+sum=0
+for(var i=100; i<=200 ; i++){
+  if(i%9==0){
+    sum=sum+i
+    console.log(i)
+  }
 }
-else{
-	console.log("this is invalid")
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+console.log(sum)
 
 
 

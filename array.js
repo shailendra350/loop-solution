@@ -17,12 +17,12 @@
 //  console.log(reversestr)
 
 
- var a =[10,50]
+//  var a =[10,50]
 
- function test(b){
- 	 b[0]=20
- 	console.log(b)
- }
+//  function test(b){
+//  	 b[0]=20
+//  	console.log(b)
+//  }
 
-test(a)
-console.log(a)
+// test(a)
+// console.log(a)
